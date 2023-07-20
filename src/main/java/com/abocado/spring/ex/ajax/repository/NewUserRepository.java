@@ -19,4 +19,10 @@ public interface NewUserRepository {
 			, @Param("introduce") String introduce			
 			);	
 	
+	// 전달된 email이 몇개인지 조회
+	public int selectCountEmail(@Param("email") String email);
+	
+	
+	
+	
 }
